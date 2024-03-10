@@ -5,6 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f0f0f0;
+    overflow-y: scroll;
 }
 
 .container {
@@ -45,9 +46,13 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     text-align: center;
+    width: 90%; /* Set width to 90% of the viewport width */
+    max-width: 400px; /* Set a maximum width for larger screens */
+    max-height: 80%; /* Set a maximum height for the message box */
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .close-btn {
