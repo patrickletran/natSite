@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="dropdown">
+        <button class="dropbtn">Past Messages</button>
+        <div class="dropdown-content" id="dateDropdown">
+            <button onclick="loadMessage('2024-03-05')">March 5, 2024</button>
+            <button onclick="loadMessage('2024-03-04')">March 4, 2024</button>
+            <!-- Add more date buttons as needed -->
+        </div>
+    </div>
+
     <div class="container">
         <button class="heart-btn" onclick="showPrompt()">CLICK ME!</button>
     </div>
