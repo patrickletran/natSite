@@ -10,9 +10,8 @@
     <div class="dropdown">
         <button class="dropbtn">Past Messages</button>
         <div class="dropdown-content" id="dateDropdown">
-            <button onclick="loadMessage('2024-03-05')">March 5, 2024</button>
-            <button onclick="loadMessage('2024-03-04')">March 4, 2024</button>
-            <!-- Add more date buttons as needed -->
+            <button onclick="loadMessage('3-8-24')">March 8, 2024</button>
+            <button onclick="loadMessage('3-10-24')">March 11, 2024</button>
         </div>
     </div>
 
@@ -20,12 +19,24 @@
         <button class="heart-btn" onclick="showPrompt()">CLICK ME!</button>
     </div>
 
-    <div class="overlay" id="overlay">
+    <div class="overlay" id="overlay1">
         <div class="prompt">
             <span class="close-btn" onclick="closePrompt()">×</span>
-            <p class="message" id="message">I love you!</p>
+            <p class="message" id="message"></p>
         </div>
     </div>
+
+    <div class="container">
+        <button class="heart-btn" onclick="showPrompt2()">Audios!</button>
+    </div>
+
+    <div class="overlay" id="overlay2">
+        <div class="prompt">
+            <span class="close-btn" onclick="closePrompt2()">×</span>
+            <div id="audio-player" style="display: none;"></div>
+        </div>
+    </div>
+
 
     <script src="script.js"></script>
 </body>
