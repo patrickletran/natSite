@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: lavender;
     overflow-y: scroll;
 }
 
@@ -12,22 +12,45 @@ body {
     position: relative;
 }
 
+.bottom-update {
+  font-family: Verdana;
+  font-size: 10px;
+  bottom: 10%;
+  position: fixed;
+  display: block;
+}
+
 .heart-btn {
     position: relative;
-    width: 200px;
-    height: 200px;
-    background-image: url('pom.png');
+    width: 400px;
+    height: 400px;
+    background-image: url('pom2.png');
     background-size: contain; /* or background-size: contain; depending on your preference */
     background-repeat: no-repeat;
     background-color: transparent; /* Set background color to transparent if your PNG has transparency */
     border: none;
     cursor: pointer;
-    color: red;
-    font-size: 40px;
+    color: black;
+    font-size: 21px;
     font-style: bold;
     font-family: Verdana;
 }
 
+.heart-btn2 {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-image: url('mac.png');
+    background-size: contain; /* or background-size: contain; depending on your preference */
+    background-repeat: no-repeat;
+    background-color: transparent; /* Set background color to transparent if your PNG has transparency */
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-size: 21px;
+    font-style: bold;
+    font-family: Verdana;
+}
 
 .overlay {
   display: none;
@@ -79,10 +102,11 @@ body {
 }
 
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: mediumseagreen;
     color: white;
     padding: 16px;
     font-size: 16px;
+    font-family: Verdana;
     border: none;
     cursor: pointer;
 }
@@ -126,19 +150,20 @@ body {
     background-color: #3e8e41;
 }
 
-/*.dropdown2{
+.dropdown2{
     position: fixed;
     display: inline-block;
     top: 20%;
 }
 
 .dropbtn2.clicked {
-    background-color: #3e8e41; /* Change background color when clicked
+    background-color: #3e8e41; 
 }
 
 .dropbtn2 {
-    background-color: #4CAF50;
+    background-color: mediumseagreen;
     color: white;
+    font-family: Verdana;
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -152,8 +177,8 @@ body {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    top: 0; /* Position at the top of the screen
-    left: 0; /* Align with the left edge of the screen
+    top: 0;
+    left: 0; 
 }
 
 .dropdown2-content button {
@@ -172,14 +197,14 @@ body {
     background-color: #ddd;
 }
 
-.dropdown2:hover .dropdown-content {
+.dropdown2:hover .dropdown2-content {
     display: block;
 }
 
 .dropdown2-content button.clicked {
-    background-color: #ccc; /* Change background color when option is chosen 
+    background-color: #ccc; 
 }
 
 .dropdown2:hover .dropbtn {
     background-color: #3e8e41;
-} */
+} 

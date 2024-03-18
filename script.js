@@ -30,7 +30,7 @@ function loadMessage(date) {
         .catch(error => console.error('Error fetching message:', error));
 }
 
-/*function loadAudio(date) {
+function loadAudio(date) {
   fetch('audios/' + date + '.mp3') // Adjust the path as needed
       .then(response => {
           if (!response.ok) {
@@ -45,7 +45,7 @@ function loadMessage(date) {
           // document.getElementById("overlay").style.display = "block";
       })
       .catch(error => console.error('Error fetching message:', error));
-}*/
+}
 
 function showPrompt2() {
   // Create an audio element
@@ -54,7 +54,7 @@ function showPrompt2() {
 
   // Create a source element and set its attributes
   var sourceElement = document.createElement("source");
-  sourceElement.src = "audios/3-10-24.mp3"; // Path to your audio file
+  sourceElement.src = newAudio; // Path to your audio file
   sourceElement.type = "audio/mpeg";
 
   // Append the source element to the audio element
