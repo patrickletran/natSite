@@ -7,21 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="dropdown">
-        <button class="dropbtn">Load Message</button>
-        <div class="dropdown-content" id="dateDropdown">
-            <button onclick="loadMessage('3-8-24')">March 8, 2024</button>
-            <button onclick="loadMessage('3-10-24')">March 11, 2024</button>
+    <div class="button-area">
+      <div class="dropdown">
+          <button class="dropbtn">Load Message</button>
+          <div class="dropdown-content" id="dateDropdown">
+              <button onclick="loadMessage('3-8-24')">March 8, 2024</button>
+              <button onclick="loadMessage('3-10-24')">March 11, 2024</button>
+          </div>
+      </div>
+  
+    <div class="dropdown2">
+        <button class="dropbtn2">Load Audio</button>
+        <div class="dropdown2-content" id="audioDropdown">
+            <button onclick="loadAudio('3-10-24')">March 10, 2024</button>
+            <button onclick="loadAudio('3-17-24')">March 17, 2024</button>
         </div>
     </div>
-
-  <div class="dropdown2">
-      <button class="dropbtn2">Load Audio</button>
-      <div class="dropdown2-content" id="audioDropdown">
-          <button onclick="loadAudio('3-10-24')">March 10, 2024</button>
-          <button onclick="loadAudio('3-17-24')">March 17, 2024</button>
-      </div>
-  </div>
+    </div>
 
     <div class="container">
         <button class="heart-btn" onclick="showPrompt()">Click For Letter</button>
